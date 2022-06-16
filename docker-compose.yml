@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  baileys:
+    image: octaviancahyadi/baileys
+    ports:
+      - "8111:8111"
+    networks:
+      - spring_network
+
+networks:
+  spring_network:
+    external: true
