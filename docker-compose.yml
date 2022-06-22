@@ -1,7 +1,11 @@
 version: '3'
-
 services:
   baileys:
-    image: octaviancahyadi/baileys
+    image: local/baileys-api
     ports:
       - "8111:8111"
+    volumes:
+      - baileys-session-data:/usr/src/app/sessions
+
+volumes:
+  baileys-session-data:

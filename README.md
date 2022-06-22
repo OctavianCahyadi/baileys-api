@@ -12,6 +12,16 @@ An implementation of [@adiwajshing/Baileys](https://github.com/adiwajshing/Baile
 2. Enter to the project directory.
 3. Install the dependencies.
 
+## Docker
+1. Build Image
+```
+docker build . -t local/baileys-api
+```
+2. Up Docker Compose
+```
+docker-compose up -d
+```
+
 ## `.env` Configurations
 
 ```env
